@@ -1,0 +1,24 @@
+package java.sel.corejava.datast;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Elevator {
+	/*
+	 * Elevator class has 
+	 * currentFloor int
+	 * queue of floors to goto
+	 * Methods:
+	 * gotoFloor(int floor)
+	 * callElevator(int callfloor)
+	 * internal method returnToBase()
+	 * 
+	 * 
+	 */
+	
+	private int currentFloor;
+	private Queue<Integer> floorQueue=new LinkedList<Integer>();
+	private static final int BASEFLOOR=0;
+	
+	//BASEFLOOR=0;
+}

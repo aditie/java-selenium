@@ -1,0 +1,17 @@
+package java.sel.corejava.datast;
+
+public class Elevator {
+	/*
+	 * Elevator class has 
+	 * currentFloor int
+	 * queue of floors to goto
+	 * Methods:
+	 * gotoFloor(int floor)
+	 * callElevator(int callfloor)
+	 * internal method returnToBase()
+	 * 
+	 * 
+	 */
+	
+
+}
