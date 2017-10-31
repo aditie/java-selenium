@@ -45,7 +45,7 @@ public class Elevator {
 	
 	private void returnToBase(){
 		System.out.println("Returning to Base ");
-		currentFloor=BASEFLOOR;
+		currentFloor=0;
 		
 	}
 	
