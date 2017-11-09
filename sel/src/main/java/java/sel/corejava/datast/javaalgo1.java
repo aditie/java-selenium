@@ -50,7 +50,12 @@ private static int fibonacci(int n ){
 
 private static boolean isPrime(int n){
 	/* n%2==0*/
-	return (n%2==0?false:true);
+	
+	for (int i=1;i<n;i++){
+		if (n%i==0) return false;
+	}
+	
+	return true;
 
 	}
 

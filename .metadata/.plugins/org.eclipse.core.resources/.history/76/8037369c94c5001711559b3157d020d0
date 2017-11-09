@@ -1,0 +1,63 @@
+package java.sel.corejava.datast;
+
+
+	/*
+	 * @(#)HashMapQuestions.java 1.0 Nov 09, 2017
+	 */
+
+	import java.util.HashMap;
+
+	/**
+	 * <code>HashMapQuestions</code> class is  HashMap Questions
+	 * <p>
+	 * <p>
+	 * <pre>
+	 * <strong>History</strong>    Name              Date            Description
+	 * <strong>History</strong>    --------------------------------------------------------------------
+	 * <strong>History</strong>   Pratyush Giri    11/9/17
+	 * </pre>
+	 *
+	 * @author Pratyush Giri
+	 * @since Nov 09, 2017
+	 */
+	public class HashMapQuestions {
+	    /**
+	     * Takes a hashmap and then prints the HashMap.
+	     * @param aMap a HashMap
+	     */
+	    public static void print(HashMap aMap){
+	        //todo write code to iterate and print in the format "key = $key, value = $value"
+	    }
+
+	    /**
+	     * Copies the content of HashMap to another HashMap
+	     * @param hm input hashmap
+	     * @return a copy of the hashMap
+	     */
+	    public static HashMap copy(HashMap hm){
+	        //todo copy to another hashmap
+	        return null;
+	    }
+
+	    /**
+	     * This method removes any key that contains duplicate values.
+	     * e.g., if a hashmap(key=value) contains {a=123, b=123, c=234}, then after the method, it will have
+	     * {a=123, c=234}
+	     * @param hm
+	     */
+	    public static void removeDuplicateValues(HashMap hm) {
+
+	    }
+
+	    /**
+	     * This method takes 2 hashMap and Checks if the keys and values are same in both hashmaps or not
+	     * @param a first hash map
+	     * @param b second hash map
+	     * @return true or false
+	     */
+	    public static boolean  match(HashMap a, HashMap b){
+	        return false;
+	    }
+
+	}
+
