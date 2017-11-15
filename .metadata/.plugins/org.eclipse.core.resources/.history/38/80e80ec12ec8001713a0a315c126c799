@@ -1,0 +1,68 @@
+
+
+import java.sel.corejava.datast.HashMapQuestions;
+
+/*
+ * @(#)HashMapTest.java 1.0 Nov 09, 2017
+ */
+
+import java.util.HashMap;
+
+/**
+ * <code>HashMapTest</code> class is  Test Class for HashMap
+ * <p>
+ * <p>
+ * <pre>
+ * <strong>History</strong>    Name              Date            Description
+ * <strong>History</strong>    --------------------------------------------------------------------
+ * <strong>History</strong>   Pratyush Giri    11/9/17
+ * </pre>
+ *
+ * @author Pratyush Giri
+ * @since Nov 09, 2017
+ */
+public class HashMapTest {
+
+    public static void main(String[] args){
+
+
+        HashMapQuestions.print(null);
+        HashMapQuestions.print(new HashMap());
+        HashMapQuestions.print(getStringMap());
+
+        HashMap original = getStringMap();
+        HashMap copied = HashMapQuestions.copy(original);
+        if (HashMapQuestions.match(original, copied)){
+            System.out.println("HashMap Copy Worked....");
+        }else {
+            System.out.println("HashMap Copy did not work....");
+        }
+
+        HashMapQuestions.removeDuplicateValues(copied);
+        HashMapQuestions.print(copied); //check if the removal worked ?
+        if (HashMapQuestions.match(original, copied)){
+            System.out.println("HashMap Match or removeDuplicateValues did not work....");
+        }else {
+            System.out.println("HashMap Copy and removeDuplicateValues worked....");
+        }
+
+    }
+
+    private static HashMap<String, String> getStringMap() {
+        HashMap<String, String> map = new HashMap<String, String>();
+        map.put("A", "123456");
+        map.put("B", "3446756");
+        map.put("C", "HDHKGK5");
+        map.put("D", "123456");
+        map.put("E", "647959J");
+        map.put("F", "123456");
+        map.put("G", "KJSDKHHDS");
+        map.put("H", "123456");
+        map.put("I", "JEHKRUOWIUR");
+        return map;
+    }
+
+}
+
+
+

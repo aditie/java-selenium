@@ -1,0 +1,99 @@
+package aditie.sel.corejava.datast;
+
+
+	/*
+	 * @(#)HashMapQuestions.java 1.0 Nov 09, 2017
+	 */
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
+
+	/**
+	 * <code>HashMapQuestions</code> class is  HashMap Questions
+	 * <p>
+	 * <p>
+	 * <pre>
+	 * <strong>History</strong>    Name              Date            Description
+	 * <strong>History</strong>    --------------------------------------------------------------------
+	 * <strong>History</strong>   Pratyush Giri    11/9/17
+	 * </pre>
+	 *
+	 * @author Pratyush Giri
+	 * @since Nov 09, 2017
+	 */
+	public class HashMapQuestions {
+	    /**
+	     * Takes a hashmap and then prints the HashMap.
+	     * @param aMap a HashMap
+	     */
+			
+	    public static void print(HashMap aMap){
+	        //todo write code to iterate and print in the format "key = $key, value = $value"
+	    	if (aMap.equals(null)){
+	    		System.out.print("null!!");
+	    		return;
+	    	}
+	    	
+	    	HashMap<String, Integer> hMap= new HashMap<String, Integer>(aMap);
+	    	for (String k : hMap.keySet()){
+	    		System.out.print("key= "+k);
+	    		System.out.println(",value= "+hMap.get(k));
+	    		
+	    		}
+	    	
+	    }
+
+	    /**
+	     * Copies the content of HashMap to another HashMap
+	     * @param hm input hashmap
+	     * @return a copy of the hashMap
+	     */
+	    public static HashMap copy(HashMap hm){
+	        //todo copy to another hashmap
+	    	if (!hm.equals(null))
+	    	{	
+	    		HashMap<Object, Object> hMap=new HashMap<Object, Object>(hm);
+	        return hMap;
+	    	}
+	    	else
+	    		{System.out.println("Null was passed");
+	    		return hm;}
+	    }
+
+	    /**
+	     * This method removes any key that contains duplicate values.
+	     * e.g., if a hashmap(key=value) contains {a=123, b=123, c=234}, then after the method, it will have
+	     * {a=123, c=234}
+	     * @param hm
+	     */
+	    public static void removeDuplicateValues(HashMap hm) {
+	    	for (Object o:hm.entrySet()){
+	    		
+	    	}
+
+	    }
+
+	    /**
+	     * This method takes 2 hashMap and Checks if the keys and values are same in both hashmaps or not
+	     * @param a first hash map
+	     * @param b second hash map
+	     * @return true or false
+	     */
+	    public static boolean  match(HashMap a, HashMap b){
+	    	boolean result=false;
+	    	if (!a.equals(null) && (!b.equals(null)))
+	    	{	
+	    	result=(a.equals(b)? true :false) ;
+	    		
+	        return result;
+	    	}
+	    	
+    		else
+    		{System.out.println("Null was passed");
+    		return false;}
+   
+		}
+
+	}
+
